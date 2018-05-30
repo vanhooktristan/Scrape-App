@@ -1,0 +1,28 @@
+{
+  "name": "scraper-app",
+  "version": "1.0.0",
+  "description": "mongodb scraper",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vanhooktristan/Scrape-App"
+  },
+  "author": "Tristan Van Hook",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vanhooktristan/Scrape-App/issues"
+  },
+  "homepage": "https://github.com/vanhooktristan/Scrape-App/blob/master/README.md",
+  "keywords": [],
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "cheerio": "^0.22.0",
+    "express": "^4.15.2",
+    "express-handlebars": "^3.0.0",
+    "mongoose": "^4.9.8",
+    "request": "^2.81.0"
+  }
+}
