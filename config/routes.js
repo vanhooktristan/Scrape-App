@@ -83,8 +83,8 @@ module.exports = function(router) {
           if (err) console.log(err);
           //find and update the note
           Article.findOneAndUpdate(
-              {_id: req.params.id}, // find the _id by req.params.id
-              {$push: {note: doc._id}}, //push to the notes array
+              {_id: req.params.id},
+              {$push: {note: doc._id}},
               {new: true},
               function(err, newdoc){
                   if (err) console.log(err);
@@ -96,7 +96,7 @@ module.exports = function(router) {
   router.get('/deleteNote/:id', function(req, res){
       Note.remove({"_id": req.params.id}, function(err, newdoc){
           if(err) console.log(err);
-          res.redirect('/saved'); //redirect to reload the page
+          res.redirect('/saved');
       });
   });
 
